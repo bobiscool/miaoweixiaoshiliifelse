@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .hah {
+            width: 300px;
+            height: 400px;
+            border: 1px solid black;
+        }
+    </style>
+
+    <script>
+        window.onload =  function(){
+            var Txt = document.getElementById('innerTxt');
+            var iBtn = document.getElementById('Btn');
+            var iHah = document.getElementsByClassName('hah')[0];
+
+            iBtn.onclick = function(){
+
+                var ralTxt = Txt.value;
+
+                iHah.innerHTML+='<li>'+ralTxt+'</li>';
+
+            };
+
+
+
+        }
+
+
+    </script>
+</head>
+<body>
+<input type="text" id="innerTxt" />
+<input type="button" value="按钮" id="Btn"/>
+<div class="hah">
+
+
+</div>
+
+
+</body>
+</html>
